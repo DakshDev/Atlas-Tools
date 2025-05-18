@@ -1,5 +1,5 @@
 import { ToastContainer, toast, Bounce } from 'react-toastify';
-
+const serverUrl = "https://atlastool-mailserver-production.up.railway.app/";
 
 
 
@@ -37,7 +37,7 @@ function Contact() {
       const message = e.target.message.value;
 
       if(firstName != "" && lastName != "" && email != "" && message != ""){
-        fetch("http://localhost:8080",{
+        fetch(serverUrl,{
           method: "POST",
           headers: {
             "Content-Type": "application/json"
