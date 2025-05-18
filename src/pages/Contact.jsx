@@ -6,7 +6,7 @@ const serverUrl = "https://atlastool-mailserver-production.up.railway.app/";
 function Contact() {
 
   const successNotify = () => toast.success('💬 Message has been sent.', {
-    position: "bottom-left",
+    position: "bottom-right",
     autoClose: 5000,
     hideProgressBar: false,
     closeOnClick: false,
@@ -18,7 +18,7 @@ function Contact() {
   });
 
   const errorNotify = () => toast.error('🦄 Something gone wrong.', {
-    position: "bottom-left",
+    position: "bottom-right",
     autoClose: 5000,
     hideProgressBar: false,
     closeOnClick: false,
